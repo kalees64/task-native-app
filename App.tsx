@@ -1,23 +1,12 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import "./global.css";
+// import "./global.css";
+// import { SafeAreaView } from "react-native-safe-area-context";
+// import { ExpoRoot } from "expo-router";
+// import "expo-router/entry";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text className="font-bold text-4xl text-red-500">
-        Open up App.tsx to start working on your app!
-      </Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+// export default function App() {
+//   return (
+//     <SafeAreaView className="flex-1">
+//       <ExpoRoot />
+//     </SafeAreaView>
+//   );
+// }
