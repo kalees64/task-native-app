@@ -12,7 +12,6 @@ import { useEffect, useState } from "react";
 
 // Icons
 import AntDesign from "@expo/vector-icons/AntDesign";
-import Feather from "@expo/vector-icons/Feather";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import TaskStatusIcon from "../components/TaskStatusIcon";
 import GreetingCardWidget from "../components/GreetingCardWidget";
