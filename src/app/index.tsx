@@ -6,6 +6,8 @@ import { ScrollView, Text, View } from "react-native";
 import "./../../global.css";
 
 // Components
+import GreetingCardWidget from "../components/GreetingCardWidget";
+import TaskStatusIcon from "../components/TaskStatusIcon";
 
 // Hooks
 import { useEffect, useState } from "react";
@@ -13,8 +15,7 @@ import { useEffect, useState } from "react";
 // Icons
 import AntDesign from "@expo/vector-icons/AntDesign";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import TaskStatusIcon from "../components/TaskStatusIcon";
-import GreetingCardWidget from "../components/GreetingCardWidget";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 // Utils
 
@@ -31,7 +32,7 @@ const Home = () => {
   }, []);
 
   return (
-    <View className="flex-1 bg-white mt-0 pt-0 px-2">
+    <View className="flex-1 bg-white mt-0 pt-0 px-2 relative">
       {/* User name & wish */}
       <GreetingCardWidget userName="Kalees" />
 
@@ -73,6 +74,11 @@ const Home = () => {
             <Text>No tasks found</Text>
           )}
         </ScrollView>
+      </View>
+
+      {/* Add Task Icon */}
+      <View className="absolute bottom-10 size-20 right-10 bg-blue-700  rounded-full flex items-center justify-center ">
+        <FontAwesome name="plus" size={30} color="white" />
       </View>
 
       {/* Status bar */}
